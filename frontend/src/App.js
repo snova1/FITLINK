@@ -26,8 +26,8 @@ function App() {
 
   return (
     <div className="App">
-      <PQRS />
-      {/*
+      {/*<PQRS />*/}
+      
       <h1>Ingresa sesion</h1>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
@@ -63,7 +63,7 @@ function App() {
           ></textarea>
         </div>
         <button type="submit">Enviar</button>
-  </form>*/}
+  </form>
   <Footer />
   </div>
   );
