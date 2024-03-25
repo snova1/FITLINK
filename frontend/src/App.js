@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
+import PQRS from './PQRS';
+import Footer from './Footer';
 
 function App() {
   const [formData, setFormData] = useState({
@@ -24,6 +26,8 @@ function App() {
 
   return (
     <div className="App">
+      <PQRS />
+      {/*
       <h1>Ingresa sesion</h1>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
@@ -59,8 +63,9 @@ function App() {
           ></textarea>
         </div>
         <button type="submit">Enviar</button>
-      </form>
-    </div>
+  </form>*/}
+  <Footer />
+  </div>
   );
 }
 
