@@ -1,34 +1,37 @@
 // Footer.js
 import React from 'react';
 import './Footer.css';
-import logo from './logo.png';
+import logo from './imagenes/LogoBlanco.png';
+import insta from './imagenes/instagram.png';
+import fb from './imagenes/facebook.png';
+import tiktok from './imagenes/tiktok.png';
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-section">
-      <img src={logo} alt="logo" />
+      <img src={logo} style={{ width: '150px', height: '90px' }} alt="logo" />
       </div>
       <div className="divider"></div>
       <div className="footer-section">
-        <a href="#">Terminos y condiciones</a>
+        <a href="/TyC">Terminos y condiciones</a>
         <br />
-        <a href="#">Politica de privacidad</a>
+        <a href="/PoliticasDePrivacidad">Politica de privacidad</a>
         <br />
-        <a href="#">PQRS</a>
+        <a href="/PQRS">PQRS</a>
       </div>
-      <div className="divider"></div>
+      <div className="divider"></div> 
       <div className="footer-section">
-        <a href="#">Empresa</a>
+        <a href="/Empresa">Empresa</a>
         <br />
         <a href="#">Aliados</a>
         <br />
         <a href="#">Planes</a>
       </div>
       <div className="footer-section">
-        <a href="#"><i className="fab fa-facebook"></i></a>
-        <a href="#"><i className="fab fa-twitter"></i></a>
-        <a href="#"><i className="fab fa-instagram"></i></a>
+        <a href="#"><i className="fab fa-facebook"></i><img src={insta} style={{ width: '30px', height: '30px' }} alt="insta" /></a>
+        <a href="#"><i className="fab fa-twitter"></i><img src={fb} style={{ width: '30px', height: '30px' }} alt="fb" /></a>
+        <a href="#"><i className="fab fa-instagram"></i><img src={tiktok} style={{ width: '30px', height: '30px' }} alt="tiktok" /></a>
       </div>
     </footer>
   );
