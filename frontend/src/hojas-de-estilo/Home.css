@@ -1,0 +1,46 @@
+
+
+.Home {
+    background-color: white;
+    color: black;
+}
+
+.home-image img {
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers the items vertically */
+    flex-direction: column;
+    margin-top: 20px;
+    background-image: url("../imagenes/gymHome.png");
+    background-size: cover;
+    color: white;
+    
+}
+
+.btn {
+    font-weight: 600;    
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.button-container img {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 100px;
+}
+
+.button-container h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
