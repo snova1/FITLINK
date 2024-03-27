@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './PQRS.css'
+import './PQRS.css';
 import pqrsImage from './pqrs-image.png';
 function PQRS() {
   const [formData, setFormData] = useState({
