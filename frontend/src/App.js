@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import PQRS from './PQRS';
+import Planes from './Planes';
 import Footer from './Footer';
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
 
   return (
     <div className="App">
-      {/*<PQRS />*/}
+      {/*<Planes/>*/}
       
       <h1>Ingresa sesion</h1>
       <form onSubmit={handleSubmit}>
