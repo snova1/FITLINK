@@ -10,7 +10,7 @@ function Header() {
             <a href="/" class='logo'><img src={logo} alt="logo" className="logored" /></a>
             <a href="/Empresa">Empresa</a>
             <a href="#">Aliados</a>
-            <a href="#">Planes</a>
+            <a href="/planes">Planes</a>
             <a href="#">Quiero ser aliado</a>
       </nav>
       <nav className='right-side'>

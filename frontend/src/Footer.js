@@ -26,7 +26,7 @@ function Footer() {
         <br />
         <a href="#">Aliados</a>
         <br />
-        <a href="#">Planes</a>
+        <a href="/planes">Planes</a>
       </div>
       <div className="footer-section">
         <a href="#"><i className="fab fa-facebook"></i><img src={insta} style={{ width: '30px', height: '30px' }} alt="insta" /></a>

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './PQRS.css';
 import pqrsImage from './pqrs-image.png';
+import Footer from './Footer';
+import Header from './componentes/Header';
 function PQRS() {
   const [formData, setFormData] = useState({
     nombre: '',
@@ -24,6 +26,7 @@ function PQRS() {
 
   return (
     <div className="PQRS">
+      <Header />
         <img src={pqrsImage} alt="PQRS" />
       <h1 className="pqrs-title">PQRS</h1>
       <p className="pqrs-info">Completa la información, una vez solicites la PQRS te enviaremos el número de radicación al correo.</p>
@@ -61,7 +64,8 @@ function PQRS() {
         ></textarea>
         <button type="submit">Enviar</button>
       </form>
-    </div>
+      <Footer />
+    </div>    
   );
 }
 

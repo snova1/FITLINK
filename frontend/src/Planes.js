@@ -3,10 +3,14 @@ import './Planes.css';
 import plan1 from './plan1.jpg';
 import plan2 from './plan2.jpg';
 import plan3 from './plan3.jpg';
+import Footer from './Footer';
+import Header from './componentes/Header';
 
 function Planes(){
     return(
+      
     <div className="planes_subscripcion">
+      <Header />
       <h1 className="plan-title">Tipos de planes</h1>
       <div className="plan">
         <div className="plan-content">
@@ -33,6 +37,7 @@ function Planes(){
         </div>
       </div>
       <button className="join-button">¡Quiero unirme al club!</button>
+      <Footer />
     </div>
     );
 }
