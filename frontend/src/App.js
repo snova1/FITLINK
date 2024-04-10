@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Empresa from './pages/Empresa';
 import TyC from './pages/TyC';
 import PPriv from './pages/PPriv';
+import GymAdmin from './pages/GymAdmin';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/planes" element={<Planes />}></Route>
         <Route path="/TyC" element={<TyC />}></Route>
         <Route path="/PoliticasDePrivacidad" element={<PPriv />}></Route>
+        <Route path="/Gym" element={<GymAdmin />}></Route>
       </Routes>
     </BrowserRouter>
   );
