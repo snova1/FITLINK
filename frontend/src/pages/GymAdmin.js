@@ -1,8 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../hojas-de-estilo/GymAdmin.css';
 import Footer from '../Footer';
 
 function GymAdmin() {
+  const navigate = useNavigate();
+  const handleModifyInfoClick = () => {
+    navigate('/GymModify'); 
+  };
   return (
     <div className="gym-admin-dashboard">
       <div className="gym-info">
@@ -16,7 +21,7 @@ function GymAdmin() {
           <li><span className="data-type">Dirección:</span> <span className="data-value">Dirección</span></li>
           <li><span className="data-type">Teléfono:</span> <span className="data-value">1234567890</span></li>
         </ul>
-        <button className="modify-info-button">Modificar info</button>
+        <button className="modify-info-button" onClick={handleModifyInfoClick}>Modificar info</button>
       </div>
       <div className="ingreso-chart">
         <h2 className="chart-title">Tus ingresos mensuales</h2>
