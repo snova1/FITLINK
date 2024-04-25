@@ -29,12 +29,20 @@
 .gym-data li {
     margin-bottom: 5px; /* Ajusta el espaciado entre elementos de la lista si es necesario */
 }
+.gym-logo {
+  width: 200px; /* Ancho deseado */
+  height: 200px; /* Altura deseada */
+}
 
 h2{
     text-align: center;
     color: #e80404;
 }
 p{
+    font-weight: 900;
+}
+.gym-data-title{
+  color: #e80404;
     font-weight: 900;
 }
 .data-type{
@@ -80,14 +88,30 @@ button {
     color: white;
 }
 
-.image-scroll {
+.image-scroll{
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Centra los elementos horizontalmente */
-    gap: 10px;
+    gap: 10px;        
+    margin-top: 25px !important;
+  }
+  .machine-scroll{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 10px;    
+    margin-top: 25px !important;
   }
   
   .add-image-button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .add-machine-button{
     background-color: red;
     color: white;
     padding: 10px 20px;

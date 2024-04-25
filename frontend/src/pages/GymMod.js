@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../hojas-de-estilo/GymMod.css';
+import GymHeader from '../componentes/GymHeader';
 import Footer from '../Footer';
 
 function GymMod(){
@@ -22,6 +23,7 @@ function GymMod(){
 
     return(
         <div>
+            <GymHeader />
             <h1>Modificar información</h1>
             <div className="gym-info-modification-form">
                 <form>
