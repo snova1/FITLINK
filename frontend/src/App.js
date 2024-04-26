@@ -13,6 +13,7 @@ import Register from './pages/Register';
 import RegisterAlly from './pages/RegisterAlly';
 import User from './pages/User';
 import UserEdit from './pages/UserEdit';
+import GymMod from './pages/GymMod';
 
 function App() {
   return (
@@ -30,8 +31,10 @@ function App() {
         <Route path="/RegisterAlly" element={<RegisterAlly />}></Route>
         <Route path="/User" element={<User />}></Route>
         <Route path="/UserEdit" element={<UserEdit />}></Route>
+        <Route path="/GymModify" element={<GymMod />}></Route>
       </Routes>
-    </BrowserRouter>
+  </BrowserRouter>
+    
   );
 }
 
