@@ -56,6 +56,15 @@ nav a:hover {
     border-radius: 5px;
     padding: 5px 10px;
 }
+
+.perfil {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: 33px;
+    width: 33px;
+    border-radius: 50%; /* Si deseas que la imagen también tenga bordes redondeados */
+    background-color: #000;
+}
+
     
 
 @media (max-width: 800px) {
