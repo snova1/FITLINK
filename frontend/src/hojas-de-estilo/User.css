@@ -1,0 +1,103 @@
+.user-profile {
+    display: flex;
+    flex-wrap: wrap; /* Asegura que el contenido se ajusta a pantallas más pequeñas */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+  
+.left-side {
+    flex: 1; /* Asegura que ambos lados tomen la mitad del espacio */
+    min-width: 350px; /* Establece un ancho mínimo para cada lado */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.right-side {
+    flex: 1; /* Asegura que ambos lados tomen la mitad del espacio */
+    min-width: 350px; /* Establece un ancho mínimo para cada lado */
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espacio entre elementos */
+}
+
+.modinfo {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url('/Users/martinpolanco/Desktop/unal 2024 1/ingesoft2/FITLINK/FITLINK/frontend/src/imagenes/mugshot.jpeg');
+    background-size: contain; /* Asegura que la imagen se ajuste dentro del marco circular */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen en el círculo */
+    background-color: black;
+}
+
+.red-container {
+    background-color: red;
+    border-radius: 20px; /* Ajusta según el redondeado deseado */
+    padding: 15px; /* Espaciado interno */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente los elementos */
+    justify-content: center; /* Centra verticalmente los elementos */
+    gap: 1px; /* Espacio entre elementos */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho y alto */
+    width: 205px;
+    height: 310px;
+}
+  
+.red-container .container-image {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: 100px;
+    width: 100px;
+    border-radius: 10px; /* Si deseas que la imagen también tenga bordes redondeados */
+}
+
+.red-container .text {
+    color: white; /* Color del texto para contraste con el fondo rojo */
+    text-align: center; /* Centra el texto */
+    margin: 5px 0; /* Margen entre los textos y los demás elementos */
+}
+
+.red-container .text-dias {
+    color: white; /* Color del texto para contraste con el fondo rojo */
+    text-align: center; /* Centra el texto */
+    margin: 5px 0; /* Margen entre los textos y los demás elementos */
+    font-size: 40px;
+}
+
+.boton-contenedor {
+    background-color: white;
+    color: red;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 15px;
+    width: 160px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.red-container .button:hover {
+    background-color: #f8f8f8; /* Color de fondo al pasar el mouse sobre el botón */
+}
+
+@media (max-width: 1300px) {
+    .user-profile {
+        display: flex;
+        flex-wrap: wrap; /* Asegura que el contenido se ajusta a pantallas más pequeñas */
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        flex-direction:column;
+        gap: 20px;
+    }
+}
+  
