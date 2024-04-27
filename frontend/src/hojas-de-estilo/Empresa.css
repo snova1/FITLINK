@@ -1,0 +1,108 @@
+.Empresa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+}
+
+.container1 p {
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+    color: black;
+}
+
+.container1 img {
+    width: 200px;
+    height: 300px;
+    padding: 20px;
+}
+
+.text {
+    text-align: center;
+    flex-direction: column;
+}
+
+.text h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #e80404;
+}
+    
+.container2 {
+    display: flex;
+    justify-content: center;
+}
+
+.container2 p {
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+    color: black;
+}
+
+.container2 img {
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+}
+
+.container3 {
+    display: flex;
+    justify-content: center;
+}
+
+.container3 p {
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+    color: black;
+}
+
+.container3 img {
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+}
+
+@media (max-width: 800px) {
+    
+    .container1 img {
+        display: none;
+        width: 100px;
+        height: 150px;
+        padding: 20px;
+    }
+
+    .container2 img {
+        display: none;
+        width: 250px;
+        height: 150px;
+        padding: 20px;
+    }
+    
+    .container3 img {
+        display: none;
+        width: 250px;
+        height: 150px;
+        padding: 20px;
+    }
+}

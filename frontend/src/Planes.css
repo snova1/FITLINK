@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+.planes_subscripcion {
+    text-align: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+  }
+
+  .plan-title{
+    color: #e80404;
+  }
+  
+  .plan {
+    display: inline-block;
+    width: 30%;
+    background-color: red;
+    border-radius: 30px;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .plan-content {
+    color: white;
+  }
+  
+  .plan-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .join-button {    
+    font-family: 'Hanken Grotesk', sans-serif;
+    display: block;
+    margin: 40px auto;
+    padding: 10px 20px;
+    background-color: #e80404;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .join-button:hover {
+    background-color: #ac0505;
+  }
+  

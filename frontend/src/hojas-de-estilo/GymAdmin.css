@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+.GymAdmin {
+    text-align: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+    
+}
+
+
+.gym-info {
+    width:50%;
+    float:left;
+    text-align: center;
+}
+
+.ingreso-chart{
+    float:left;
+}
+
+.rest{
+    clear:both;
+    text-align: center;
+}
+.gym-data {
+    list-style-type: none;
+    padding: 0;
+}
+
+.gym-data li {
+    margin-bottom: 5px; /* Ajusta el espaciado entre elementos de la lista si es necesario */
+}
+.gym-logo {
+  width: 200px; /* Ancho deseado */
+  height: 200px; /* Altura deseada */
+}
+
+h2{
+    text-align: center;
+    color: #e80404;
+}
+p{
+    font-weight: 900;
+}
+.gym-data-title{
+  color: #e80404;
+    font-weight: 900;
+}
+.data-type{
+    color: #e80404;
+    font-weight: 900;
+}
+.data-value{
+    font-weight: 900;
+}
+.schedule{
+    text-align: center;
+}
+
+button {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #e80404;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+  
+  button:hover {
+    background-color: #ac0505;
+  }
+
+
+  input[type='text'] {
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: #9e9e9e;
+    color: white;
+    margin-bottom: 10px !important;
+    display: block; 
+    margin: 0 auto; 
+  }
+  input::placeholder {
+    color: white;
+}
+
+.image-scroll{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 10px;        
+    margin-top: 25px !important;
+  }
+  .machine-scroll{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 10px;    
+    margin-top: 25px !important;
+  }
+  
+  .add-image-button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .add-machine-button{
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px !important;
+    margin-bottom: 30px !important;
+  }
+  
+  .uploaded-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;    
+    margin-bottom: 10px !important;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .delete-image-button {
+    text-align: center;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }

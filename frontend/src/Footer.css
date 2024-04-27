@@ -1,0 +1,31 @@
+/* Footer.css */
+.footer {
+    bottom:0;
+    left:0;
+    width:100%;
+    background-color: #e80404;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .footer-section {
+    text-align: center;
+  }
+  .footer-section a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .divider {
+    width: 1px;
+    height: 60px; /* Altura suficiente para abarcar el contenido */
+    background-color: white;
+  }
+  
