@@ -33,8 +33,8 @@
 .profile-pic {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
-    background-image: url('/Users/martinpolanco/Desktop/unal 2024 1/ingesoft2/FITLINK/FITLINK/frontend/src/imagenes/mugshot.jpeg');
+    border-radius: 50%;    
+    background-image: url('../imagenes/mugshot.jpeg');
     background-size: contain; /* Asegura que la imagen se ajuste dentro del marco circular */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center; /* Centra la imagen en el círculo */
