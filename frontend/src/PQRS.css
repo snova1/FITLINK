@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+.PQRS {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Hanken Grotesk', sans-serif;
+  }
+  
+  .pqrs-title {
+    color: #e80404;
+  }
+  
+  .pqrs-info {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  input[type='text'],
+  input[type='email'],
+  input[type='tel'],
+  textarea {
+    width: calc(50% - 20px); /* Ancho menos los márgenes */
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: #9e9e9e;
+    color: white;
+    margin-bottom: 10px !important;
+    display: block; /* Mostrar en línea */
+    margin: 0 auto; /* Eliminar el margen derecho para evitar desbordamiento */
+  }
+  input[type='text']::placeholder,
+  input[type='email']::placeholder,
+  input[type='tel']::placeholder,
+  textarea::placeholder {
+    color: white;
+}
+  
+  button {
+    padding: 10px 20px;
+    background-color: #e80404;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ac0505;
+  }
+  
+  
