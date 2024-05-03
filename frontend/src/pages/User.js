@@ -86,7 +86,7 @@ function User() {
                     />
                     <p className="text">Hoy te recomendamos entrenar:</p>
                     <p className='text'><span>{entrenamiento}</span></p>
-                    <a href="#" className='boton-contenedor'>Plan de entrenamiento</a>
+                    <a href="/PlanEntrenamiento" className='boton-contenedor'>Plan de entrenamiento</a>
                 </div>
             </div>
         </div>
