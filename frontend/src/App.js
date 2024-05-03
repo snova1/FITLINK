@@ -13,13 +13,14 @@ import Register from './pages/Register';
 import RegisterAlly from './pages/RegisterAlly';
 import User from './pages/User';
 import UserEdit from './pages/UserEdit';
+import UserGym from './pages/UserGym';
 import GymMod from './pages/GymMod';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
+        <Route path="/" element={<UserGym />}></Route>
         <Route path="/Empresa" element={<Empresa />}></Route>
         <Route path="/pqrs" element={<PQRS />}></Route>
         <Route path="/planes" element={<Planes />}></Route>
@@ -32,6 +33,7 @@ function App() {
         <Route path="/User" element={<User />}></Route>
         <Route path="/UserEdit" element={<UserEdit />}></Route>
         <Route path="/GymModify" element={<GymMod />}></Route>
+        <Route path="/UserGym" element={<UserGym />}></Route>
       </Routes>
   </BrowserRouter>
     

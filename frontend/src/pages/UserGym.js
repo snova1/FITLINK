@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../componentes/HeaderUser';
 import Footer from '../Footer'
+import gym_logo from '../imagenes/gym_logo.png';
 
 function UserGym(){
     return (
@@ -20,14 +21,14 @@ function UserGym(){
             <li><span className="data-type">Teléfono:</span> <span className="data-value">6842597</span></li>
           </ul>
           <div className="schedule">
-            <h2 className="schedule-title">Tu horario de atención</h2>
+            <h2 className="schedule-title">Horario de atención</h2>
             <p className="schedule-description">De lunes a viernes</p>
             <p className="schedule-hours">8:00am - 8:00pm</p>
           </div>
-            <div className="profile-picture">
+          </div>          
+          <div className="profile-picture">
                 <img src={gym_logo} alt='gym_logo' className='gym-logo'/>
             </div>
-          </div>
           <div className="image-scroll">
 
           </div>
