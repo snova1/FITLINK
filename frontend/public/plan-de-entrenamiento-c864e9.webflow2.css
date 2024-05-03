@@ -1,0 +1,232 @@
+:root {
+  --white: white;
+  --black: black;
+}
+
+.pricing-overview {
+  border-bottom: 1px solid #e4ebf3;
+  padding: 80px 30px;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centered-heading {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.pricing-description {
+  text-align: center;
+  max-width: 265px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.pricing-description.p1 {
+  max-width: 990px;
+  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+  font-size: 24px;
+  bottom: -151px;
+}
+
+.pricing-description.p2 {
+  max-width: 265px;
+  top: 8px;
+  left: -161px;
+}
+
+.pricing-description.p3 {
+  max-width: 385px;
+  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+  top: 74px;
+  left: 200px;
+  right: -77px;
+}
+
+.pricing-description.p4 {
+  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+  top: -92px;
+  left: -233px;
+  right: -86px;
+}
+
+.pricing-description.pp1 {
+  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+  top: 9px;
+  left: -385px;
+}
+
+.pricing-description.pp2 {
+  color: red;
+  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+  font-size: 18px;
+  top: 3px;
+  left: -368px;
+}
+
+.pricing-description.pp3 {
+  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+  top: -83px;
+  left: -233px;
+}
+
+.pricing-description.pp4 {
+  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+  font-size: 18px;
+  top: -87px;
+  left: -290px;
+}
+
+.pricing-description.pp5 {
+  color: red;
+  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+  top: 0;
+  left: -308px;
+}
+
+.pricing-description.pp7 {
+  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+  font-size: 18px;
+  top: 77px;
+  left: 134px;
+  right: 200px;
+}
+
+.pricing-grid {
+  grid-column-gap: 64px;
+  grid-row-gap: 50px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  margin-top: 50px;
+  display: grid;
+}
+
+.pricing-card-three {
+  text-align: center;
+  background-color: red;
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  position: relative;
+  top: -106px;
+}
+
+.pricing-image {
+  object-fit: cover;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 16px;
+  padding-right: 0;
+  position: relative;
+}
+
+.pricing-image.i1, .pricing-image.i2, .pricing-image.i3, .pricing-image.i4, .pricing-image.i5, .pricing-image.i6 {
+  bottom: -20px;
+}
+
+.pricing-image.i7 {
+  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  bottom: 38px;
+  right: -430px;
+}
+
+.pricing-card-text {
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+  font-size: 17px;
+}
+
+.text-link-arrow {
+  color: #1a1b1f;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  display: flex;
+}
+
+.arrow-embed {
+  margin-left: 2px;
+  display: flex;
+}
+
+.heading, .heading-2, .heading-3, .heading-4, .heading-5, .heading-6 {
+  color: #fff;
+  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+}
+
+.bold-text {
+  font-size: 18px;
+  position: relative;
+  top: 0;
+  left: -79px;
+}
+
+.bold-text-2 {
+  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+}
+
+.bold-text-3 {
+  font-size: 18px;
+  position: static;
+  top: 65px;
+  left: 122px;
+}
+
+.bold-text-4 {
+  font-size: 20px;
+}
+
+.bold-text-5 {
+  color: red;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 728px;
+  }
+
+  .pricing-grid {
+    grid-column-gap: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pricing-overview {
+    padding: 60px 15px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .container {
+    max-width: none;
+  }
+
+  .centered-heading {
+    margin-bottom: 24px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+#w-node-cf021b15-8811-32a8-ea38-37661f265f79-464d21a3, #w-node-_0b8b64f3-a28f-368e-4e9a-d3c1adc0a049-464d21a3, #w-node-cf021b15-8811-32a8-ea38-37661f265f83-464d21a3, #w-node-cf021b15-8811-32a8-ea38-37661f265f8d-464d21a3, #w-node-_1017ec7a-0cf3-ffb8-ae29-3aec1877e7f5-464d21a3, #w-node-_6a426a1c-db0e-bba4-f9ae-bcd2480f1d0b-464d21a3 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
