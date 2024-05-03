@@ -14,6 +14,7 @@ import RegisterAlly from './pages/RegisterAlly';
 import User from './pages/User';
 import UserEdit from './pages/UserEdit';
 import GymMod from './pages/GymMod';
+import Entrenamiento from './PlanEntrenamiento';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/User" element={<User />}></Route>
         <Route path="/UserEdit" element={<UserEdit />}></Route>
         <Route path="/GymModify" element={<GymMod />}></Route>
+        <Route path="/PlanEntrenamiento" element={<Entrenamiento/>}></Route>
       </Routes>
   </BrowserRouter>
     
