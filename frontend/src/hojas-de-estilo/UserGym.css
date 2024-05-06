@@ -1,52 +1,54 @@
 /* Estilos para la página del gimnasio de usuario */
 .gym-user-dashboard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .map-section,
-  .gym-info,
-  .profile-picture {
-    margin-bottom: 20px;
-  }
-  
-  .map-section,
-  .gym-info {
-    width: 30%;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-  }
-  
-  .profile-picture {
-    width: 30%;
-  }
-  
-  .image-scroll,
-  .machine-scroll {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  .image-scroll img,
-  .machine-scroll img {
-    width: calc(50% - 10px);
-    margin-bottom: 10px;
-  }
-  
-  .comments-section {
-    width: 100%;
-  }
-  
-  .comment {
-    background-color: red;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gym-top {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.map-section,
+.gym-info {
+  padding: 20px;
+}
+
+
+.image-scroll{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  gap: 10px;        
+  margin-top: 25px !important;
+}
+.machine-scroll{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  gap: 10px;    
+  margin-top: 25px !important;
+}
+
+.comments-section {
+  justify-content: center;
+  width: 100%;
+}
+
+.new-comments-button{
+  background-color:gray;
+  align-self: center;
+}
+.new-comments-button:hover{
+  background-color:rgb(61, 60, 60);
+}
+
+.comment {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}

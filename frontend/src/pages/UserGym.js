@@ -1,15 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '../componentes/HeaderUser';
+import '../hojas-de-estilo/UserGym.css';
 import Footer from '../Footer'
 import gym_logo from '../imagenes/gym_logo.png';
+import CommentModal from '../componentes/ComentModal';
 
 function UserGym(){
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
     return (
         <div className="gym-user-dashboard">
             <Header />
+          <div className='gym-top'>
           <div className="map-section">
-            {/* Contenido del mapa */}
-            {/* Puedes utilizar una librería como Google Maps o Mapbox para mostrar el mapa */}
           </div>
           <div className="gym-info">
           <p className="gym-name">Golden Gym</p>
@@ -29,21 +39,20 @@ function UserGym(){
           <div className="profile-picture">
                 <img src={gym_logo} alt='gym_logo' className='gym-logo'/>
             </div>
-          <div className="image-scroll">
-
           </div>
-          <h2>Maqinas disponibles</h2>
+          <div className="image-scroll">
+          </div>
+          <h2>Maquinas disponibles</h2>
           <div className="machine-scroll">
-
           </div>
           <div className="comments-section">
             <h2 className="comments-title">Comentarios</h2>
             {/* Sección de comentarios */}
-            {/* Cada comentario se puede representar como un rectángulo rojo con texto blanco */}
-            {/* Se pueden mostrar las calificaciones con estrellas */}
-            {/* También puedes agregar un cuadro gris para dejar un comentario */}
-            {/* Agregar funcionalidad para dejar comentarios */}
+            <button className="new-comments-button" onClick={openModal}>
+              Deja tus comentarios
+            </button>
           </div>
+          {isModalOpen && <CommentModal onClose={closeModal} />}
           <Footer />
         </div>
     );
