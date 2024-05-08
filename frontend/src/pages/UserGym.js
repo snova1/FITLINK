@@ -3,10 +3,12 @@ import Header from '../componentes/HeaderUser';
 import '../hojas-de-estilo/UserGym.css';
 import Footer from '../Footer'
 import gym_logo from '../imagenes/gym_logo.png';
-import CommentModal from '../componentes/ComentModal';
+import CommentModal from '../componentes/CommentModal';
 
 function UserGym(){
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [comments, setComments] = useState([]); // Estado para almacenar los comentarios
+  const [ratings, setRatings] = useState([]); // Estado para almacenar las calificaciones
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -14,6 +16,12 @@ function UserGym(){
 
   const closeModal = () => {
     setIsModalOpen(false);
+  };
+
+  // Función para agregar un nuevo comentario y calificación
+  const addCommentAndRating = (comment, rating) => {
+    setComments([...comments, comment]);
+    setRatings([...ratings, rating]);
   };
     return (
         <div className="gym-user-dashboard">
@@ -47,12 +55,18 @@ function UserGym(){
           </div>
           <div className="comments-section">
             <h2 className="comments-title">Comentarios</h2>
-            {/* Sección de comentarios */}
-            <button className="new-comments-button" onClick={openModal}>
-              Deja tus comentarios
-            </button>
+            {comments.map((comment, index) => (
+            <div key={index} className="comment">
+            <p>{comment}</p>
+            <p>Calificación: {ratings[index]} estrellas</p>
+            </div>
+          ))}
+          <button className="new-comments-button" onClick={openModal}>
+            Deja tus comentarios
+          </button>
           </div>
-          {isModalOpen && <CommentModal onClose={closeModal} />}
+      {/* Renderizar el modal */}
+      {isModalOpen && <CommentModal onClose={closeModal} onCommentSubmit={addCommentAndRating} />}
           <Footer />
         </div>
     );

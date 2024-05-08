@@ -32,9 +32,8 @@
   margin-top: 25px !important;
 }
 
-.comments-section {
+.comments-section {  
   justify-content: center;
-  width: 100%;
 }
 
 .new-comments-button{
@@ -46,6 +45,8 @@
 }
 
 .comment {
+  display:flex;  
+  flex-wrap: wrap;
   background-color: red;
   color: white;
   padding: 10px;
